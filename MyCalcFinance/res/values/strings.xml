@@ -1,0 +1,63 @@
+<resources>
+
+    <string name="app_name">MyCalc Finance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Main</string>
+
+    <string-array name="menuchoices">
+        <item>Present Value</item>
+        <item>Present Value of Annuity</item>
+        <item>Present Value of Annuity Due</item>
+        <item>Future Value of Annuity</item>
+        <item>Future Value of Annuity Due</item>
+        <item>Bond Pricing</item>
+        <item>Growth Rate Calculation</item>
+        <item>Net Present Value</item>
+    </string-array>
+    
+    
+    <string name="pv0">Present Value / Future Value</string>
+    <string name="pvinfo0">Present Value / Future Value - Help Section</string>
+    <string name="pvinfo1">The logic behind this formula is that a dollar today is not worth a dollar tomorrow. For example, if you leave $1000 in the bank for a year, it will be worth more (Future Value). Similarly, when you will receive $1000 a year from now, it is worth less to you now (Present Value).</string>
+  
+    <string name="pvann0">Present Value of Annuity</string>
+    <string name="pvanninfo0">Present Value of Annuity - Help Section</string>
+    <string name="pvanninfo1">The logic behind this formula is that if you receive payments for a number of years, each successive payment is worth less to you because you have to wait for it. Five payments of $5000 for example are not worth $25,000 but less (depending on interest rate applied). This formula calculates how much less the stream of payments is worth.</string>
+  
+    <string name="pvanndue0">Present Value of Annuity Due</string>
+    <string name="pvanndueinfo0">Present Value of Annuity Due - Help Section</string>
+    <string name="pvanndueinfo1">The logic behind this formula is that if you receive payments for a number of years, each successive payment is worth less to you because you have to wait for it. Five payments of $5000 for example are not worth $25,000 but less (depending on interest rate applied). This formula calculates how much less the stream of payments is worth. However, for the Annuity Due, it is assumed that the first payment is made / received today. This means that it is essentially the cash flow today + the present value of the annuity for n-1 years.</string>
+  
+    <string name="fvann0">Future Value of Annuity</string>
+    <string name="fvanninfo0">Future Value of Annuity - Help Section</string>
+    <string name="fvanninfo1">Placeholder</string>
+ 
+    <string name="fvanndue0">Future Value of Annuity Due</string>
+    <string name="fvanndueinfo0">Future Value of Annuity Due - Help Section</string>
+    <string name="fvanndueinfo1">Placeholder</string>
+    
+    <string name="bonds0">Present Value of Bonds</string>
+    <string name="bondsinfo0">Present Value of Bonds - Help Section</string>
+    <string name="bondsinfo1">Placeholder</string>
+    <string name="bonds_cp_hint">dollar value, not coupon rate</string>
+    
+    
+    
+
+    
+    
+    <string name="explain_PresentValue">Present Value: The value of a one-time cash flow today</string>
+    <string name="explain_FutureValue">Future Value: The future value of the Present Value, grown with cumulative interest for the number of years specified</string>
+    <string name="explain_InterestRate">Interest Rate: The interest / discount rate applied to see how much the Present Value decreases / the Future Value increases by</string>
+    <string name="explain_PresentValueAnnuity">Present Value: The present value sum of all annual payments discounted for the number of years specified</string>
+    <string name="explain_FutureValueAnnuity">Future Value: The future value sum of all annual payments with cumulative interest for the number of years specified</string>
+    <string name="explain_Years">Number of years: The number of years that you receive payments, make payments, or grow / discount money for</string>
+    <string name="explain_PeriodsPerYear">Number of Periods per year: For interst that compounds (is applied) multiple times a year, it specifies how often in one year an annual interest rate is applied</string>
+    <string name="explain_CashFlow">Cash Flow: The annual cash flow received / made each year for the number of years specified</string>
+	<string name="explain_Formula">The following equation is used:</string>
+	<string name="explain_Instructions">Please fill in the fields, leaving one empty. Hit calculate and the missing value will be calculated.</string>
+	<string name="explain_Bonds">Bonds: The present Value that a bond is worth today, taking into account both the discounted face value payment and the discounted annuity of the coupon payments.</string>
+	<string name="explain_Coupon">Coupon Payments: The coupon payment is the money that you receive each year that you are holding the bond. Sometimes you will receive coupon payments multiple times a year; this refers then to the number of periods</string>
+    
+</resources>
