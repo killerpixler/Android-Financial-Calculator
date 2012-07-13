@@ -42,7 +42,16 @@
     <string name="bondsinfo1">Placeholder</string>
     <string name="bonds_cp_hint">dollar value, not coupon rate</string>
     
+    <string name="growth0">Growth Rate Calculation</string>
+    <string name="growthinfo0">Growth Rate Calculation - Help Section</string>
+    <string name="growthinfo1">Placeholder</string>
+    <string name="growth_t_hint">years between the dividends</string>
     
+    <string name="npv0">Net Present Value Calculation</string>
+    <string name="npv1">You have selected 0 periods so far.</string>
+    <string name="npvspecialinstructions">Choose from the slider below how many cash flows you want to discount</string>
+    <string name="npvinfo0">Net Present Value Calculation - Help Section</string>
+    <string name="npvinfo1">Placeholder</string>
     
 
     
@@ -59,5 +68,7 @@
 	<string name="explain_Instructions">Please fill in the fields, leaving one empty. Hit calculate and the missing value will be calculated.</string>
 	<string name="explain_Bonds">Bonds: The present Value that a bond is worth today, taking into account both the discounted face value payment and the discounted annuity of the coupon payments.</string>
 	<string name="explain_Coupon">Coupon Payments: The coupon payment is the money that you receive each year that you are holding the bond. Sometimes you will receive coupon payments multiple times a year; this refers then to the number of periods</string>
-    
+    <string name="explain_Div0">Div0: The dividens that were paid out this year.</string>
+    <string name="explain_DivN">Div-n: The dividends that were paid out "t" years ago.</string>
+    <string name="explain_Growth">Growth rate: The rate at which the dividend has grown every year for "t" years</string>
 </resources>

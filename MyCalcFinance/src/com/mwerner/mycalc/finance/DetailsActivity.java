@@ -29,16 +29,16 @@ public class DetailsActivity extends FragmentActivity {
 			break;
 
 		case 1:
+			// Present Value of Annuity
 			Fragment frag1 = new F_PVAnn();
-
 			FragmentTransaction ft1 = getSupportFragmentManager()
 					.beginTransaction();
 			ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
 			ft1.replace(R.id.details1, frag1);
-
 			ft1.commit();
 			break;
 		case 2:
+			// Present Value of Annuity Due
 			Fragment frag2 = new F_PVAnnDue();
 			FragmentTransaction ft2 = getSupportFragmentManager()
 					.beginTransaction();

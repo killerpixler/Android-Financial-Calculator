@@ -11,6 +11,6 @@ public class F_FVAnn_Info extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		return inflater.inflate(R.layout.pv_info, container, false);
+		return inflater.inflate(R.layout.fvann_info, container, false);
 	}
 }

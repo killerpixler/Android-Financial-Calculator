@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fvann0"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/explain_Instructions"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Future Value"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:id="@+id/fvann_pv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash Flow"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:id="@+id/fvann_cf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+    </EditText>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest Rate / Discount Rate"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:id="@+id/fvann_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+    </EditText>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of years"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:id="@+id/fvann_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+    <Button
+        android:id="@+id/fvann_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+         />
+
+    <TextView
+        android:id="@+id/fvann_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" 
+        android:padding="10dp"
+    	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/fvann_infobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information" />
+
+</LinearLayout>
+</ScrollView>

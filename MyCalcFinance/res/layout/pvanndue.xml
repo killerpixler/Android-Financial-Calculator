@@ -11,19 +11,19 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/pv0"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <TextView
             android:id="@+id/textView0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/explain_Instructions"
+            android:text="@string/pvanndue0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/explain_Formula"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
@@ -35,26 +35,28 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/pv_pv"
+            android:id="@+id/pvanndue_pv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal" >
+        </EditText>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Future Value"
+            android:text="Cash Flow"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/pv_fv"
+            android:id="@+id/pvanndue_cf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal" >
+        </EditText>
 
         <TextView
             android:id="@+id/textView4"
@@ -65,26 +67,12 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/pv_r"
+            android:id="@+id/pvanndue_r"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Number of periods per year"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <EditText
-            android:id="@+id/pv_n"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal" >
+        </EditText>
 
         <TextView
             android:id="@+id/textView6"
@@ -95,20 +83,21 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/pv_t"
+            android:id="@+id/pvanndue_t"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal" >
+        </EditText>
 
         <Button
-            android:id="@+id/pv_calc"
+            android:id="@+id/pvanndue_calc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calculate" />
 
         <TextView
-            android:id="@+id/pv_answer"
+            android:id="@+id/pvanndue_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -116,10 +105,11 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Button
-            android:id="@+id/pv_infobutton"
-            android:layout_width="match_parent"
+            android:id="@+id/pvanndue_infobutton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Infobutton" />
+            android:text="Other" />
+
     </LinearLayout>
 
 </ScrollView>
