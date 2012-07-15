@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class F_NPV extends Fragment {
 	int i = 0;
-	EditText r =  (EditText) getActivity().findViewById(R.id.npv_rate);
+	EditText r = (EditText) getActivity().findViewById(R.id.npv_rate);
 	Button calc = (Button) getActivity().findViewById(R.id.npv_calc);
 	EditText[] DynamicField = new EditText[16];
 
@@ -33,13 +33,11 @@ public class F_NPV extends Fragment {
 		final LinearLayout linearLayout = (LinearLayout) getActivity()
 				.findViewById(R.id.npv_calcfields);
 		EditText editText = new EditText(getActivity());
-		editText.setId(i); // Set id so that you can remove that EditText in the
-							// future.
+		editText.setId(i);
 
 		editText.setLayoutParams(new LayoutParams(
 
 		LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-		// linearLayout.addView(editText);
 		SeekBar bar = (SeekBar) getActivity().findViewById(R.id.npv_seekbar);
 		final TextView selection = (TextView) getActivity().findViewById(
 				R.id.npv_selected);
@@ -48,10 +46,10 @@ public class F_NPV extends Fragment {
 
 			public void onProgressChanged(SeekBar seekbar, int progress,
 					boolean fromUser) {
-				// to display to the user how many he has selcted
 				selection.setText("You have selcted " + progress + " periods.");
 				if (progress == 0) {
-					String normalstring = getActivity().getResources().getString (R.string.npv1);
+					String normalstring = getActivity().getResources()
+							.getString(R.string.npv1);
 					selection.setText(normalstring);
 
 				}
@@ -85,29 +83,26 @@ public class F_NPV extends Fragment {
 			}
 		});
 
-
 		calc.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View arg0) {
-			Double r1 = Double.parseDouble(r.getText().toString());
-			EditText editText = (EditText) getActivity().findViewById(i);
-			TextView answer = (TextView) getActivity().findViewById(R.id.npv_answer);
-			double[] CashFlows;
-			CashFlows = new double[i];
-			double result = 0;
-			CashFlows[i] = (Double.parseDouble(editText.getText().toString()))/(Math.pow(1+r1, i));
 
-			
-			for(double d : CashFlows) {
-				result += d;
-			}
-			answer.setText("answer is " + result);
-				
-			
-			
+			public void onClick(View arg0) {
+				Double r1 = Double.parseDouble(r.getText().toString());
+				EditText editText = (EditText) getActivity().findViewById(i);
+				TextView answer = (TextView) getActivity().findViewById(
+						R.id.npv_answer);
+				double[] CashFlows;
+				CashFlows = new double[i];
+				double result = 0;
+				CashFlows[i] = (Double.parseDouble(editText.getText()
+						.toString())) / (Math.pow(1 + r1, i));
+
+				for (double d : CashFlows) {
+					result += d;
+				}
+				answer.setText("answer is " + result);
+
 			}
 		});
-		
-		
+
 	}
 }
