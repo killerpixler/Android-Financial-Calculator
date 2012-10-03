@@ -18,6 +18,13 @@
             android:text="@string/npv0"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interestRate" />
+
         <EditText
             android:id="@+id/npv_rate"
             android:layout_width="match_parent"

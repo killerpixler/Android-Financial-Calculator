@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentTransaction;
 public class DetailsActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle arg0) {
-		// TODO Auto-generated method stub
 		super.onCreate(arg0);
 		setContentView(R.layout.details);
 

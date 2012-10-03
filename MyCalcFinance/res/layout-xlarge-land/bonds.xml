@@ -99,14 +99,12 @@
          />
 
     <TextView
-        android:id="@+id/fvann_answer"
+        android:id="@+id/bonds_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0" 
         android:padding="10dp"
     	android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    
 
 </LinearLayout>
 </ScrollView>

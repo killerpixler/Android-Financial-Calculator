@@ -3,7 +3,7 @@
     <string name="app_name">MyCalc Finance</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">Main</string>
+    <string name="title_activity_main">MyCalcFinance</string>
 
     <string-array name="menuchoices">
         <item>Present Value</item>
@@ -31,20 +31,20 @@
   
     <string name="fvann0">Future Value of Annuity</string>
     <string name="fvanninfo0">Future Value of Annuity - Help Section</string>
-    <string name="fvanninfo1">Placeholder</string>
+    <string name="fvanninfo1">The logic behind the Future Value of Annuity Formula is that you make equal deposits every year for a certain number of years, starting one year from now. The formula will then calculate, based on a given interest rate, how much these deposits will have accumulated to by the end of the years entered. A real world example for this would be equal deposits into a savings account for your retirement.</string>
  
     <string name="fvanndue0">Future Value of Annuity Due</string>
     <string name="fvanndueinfo0">Future Value of Annuity Due - Help Section</string>
-    <string name="fvanndueinfo1">Placeholder</string>
+    <string name="fvanndueinfo1">The logic behind the Future Value of Annuity Formula Due is that you make equal deposits every year for a certain number of years, starting TODAY. The formula will then calculate, based on a given interest rate, how much these deposits will have accumulated to by the end of the years entered. A real world example for this would be equal deposits into a savings account for your retirement.</string>
     
     <string name="bonds0">Present Value of Bonds</string>
     <string name="bondsinfo0">Present Value of Bonds - Help Section</string>
-    <string name="bondsinfo1">Placeholder</string>
+    <string name="bondsinfo1">This formula calculates what the present value of a company’s bond is. A bond pays a certain number of coupon payments every year and returns the face value of the bond at its maturity (when it has run out). With this formula you can calculate how much based a bond is worth to you today, based on the return of its face value in the future as well as a series of discounted coupon payments.</string>
     <string name="bonds_cp_hint">dollar value, not coupon rate</string>
     
     <string name="growth0">Growth Rate Calculation</string>
     <string name="growthinfo0">Growth Rate Calculation - Help Section</string>
-    <string name="growthinfo1">Placeholder</string>
+    <string name="growthinfo1">This formula calculates at what rate dividends (or any forms of cash flows) grew over a number of years.</string>
     <string name="growth_t_hint">years between the dividends</string>
     
     <string name="npv0">Net Present Value Calculation</string>
@@ -53,7 +53,26 @@
     <string name="npvinfo0">Net Present Value Calculation - Help Section</string>
     <string name="npvinfo1">Placeholder</string>
     
-
+	<string name="error_tooManyFieldsEmpty">Error! You left too many fields empty!</string>
+	<string name="error_featureComingSoon">Sorry! This feature will be coming soon!</string>
+	<string name="error_SwitchBreak">Error on switch break</string>
+    <string name="interestRate">Interest Rate:</string>
+    
+    
+    <string name="answer_npv">The Net Present Value of cash flows is: $</string>
+    <string name="answer_pv">The Present Value is: $</string>
+    <string name="answer_fv">The Future Value is: $</string>
+    <string name="answer_n">The number of periods per year is:</string>
+    <string name="answer_pvann">The Present Value of Annual Cash Flows is: $</string>
+    <string name="answer_cf">The Annual Cash Flows are:</string>
+    <string name="answer_r">The Interest Rate is:</string>
+    <string name="answer_t">The number of years is:</string>
+    <string name="answer_fvann">The Future Value of Annual Cash Flows is: $</string>
+    <string name="answer_bonds">The Present Value of this bond is: $</string>
+    <string name="answer_growth">The grow rate is:</string>
+    <string name="answer_div0">The Dividend today is: $</string>
+    <string name="answer_div_t">The Dividend \"T\" years ago was: $</string>
+    <string name="answer_growth_t">The number of years between dividens was:</string>
     
     
     <string name="explain_PresentValue">Present Value: The value of a one-time cash flow today</string>

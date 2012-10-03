@@ -1,91 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/fvann0"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Future Value"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-
-    <EditText
-        android:id="@+id/fvann_pv"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cash Flow"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-    <EditText
-        android:id="@+id/fvann_cf"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Interest Rate / Discount Rate"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-    <EditText
-        android:id="@+id/fvann_r"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Number of years"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-    <EditText
-        android:id="@+id/fvann_t"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/npv0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:id="@+id/fvann_calc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-         />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interestRate" />
 
-    <TextView
-        android:id="@+id/fvann_answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0" 
-        android:padding="10dp"
-    	android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/npv_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+        </EditText>
 
-    
+        <TextView
+            android:id="@+id/npv_specialinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/npvspecialinstructions" />
 
-</LinearLayout>
+        <SeekBar
+            android:id="@+id/npv_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="15"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:id="@+id/npv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/npv1" />
+
+        <LinearLayout
+            android:id="@+id/npv_calcfields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/npv_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/npv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+</ScrollView>

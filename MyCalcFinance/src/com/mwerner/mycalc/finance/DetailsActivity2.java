@@ -1,9 +1,7 @@
 package com.mwerner.mycalc.finance;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
 
 public class DetailsActivity2 extends FragmentActivity {
 	@Override
@@ -14,61 +12,13 @@ public class DetailsActivity2 extends FragmentActivity {
 
 		Bundle starter = getIntent().getExtras();
 		String launcher = (String) starter.get("infos");
-
-		if (launcher.equals("pv")) {
-			Fragment fragPV = new F_PV_Info();
-			FragmentTransaction ft = getSupportFragmentManager()
-					.beginTransaction();
-			ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-			ft.replace(R.id.details2, fragPV);
-			ft.commit();
-		}
-		if (launcher.equals("pvann")) {
-			Fragment fragPVAnn = new F_PVAnn_Info();
-			FragmentTransaction ft = getSupportFragmentManager()
-					.beginTransaction();
-			ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-			ft.replace(R.id.details2, fragPVAnn);
-			ft.commit();
-		}
-		if (launcher.equals("pvanndue")) {
-			Fragment fragPVAnnDue = new F_PVAnnDue_Info();
-			FragmentTransaction ft = getSupportFragmentManager()
-					.beginTransaction();
-			ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-			ft.replace(R.id.details2, fragPVAnnDue);
-			ft.commit();
-		}
-		if(launcher.equals("fvann")){
-			Fragment fragFVAnn = new F_FVAnn_Info();
-			FragmentTransaction ft = getSupportFragmentManager()
-					.beginTransaction();
-			ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-			ft.replace(R.id.details2, fragFVAnn);
-			ft.commit();
-		}
-		if(launcher.equals("fvanndue")){
-			Fragment fragFVAnnDue = new F_FVAnnDue_Info();
-			FragmentTransaction ft = getSupportFragmentManager()
-					.beginTransaction();
-			ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-			ft.replace(R.id.details2, fragFVAnnDue);
-			ft.commit();
-		}
-		if(launcher.equals("bonds")){
-			Fragment fragBonds = new F_Bonds_Info();
-			FragmentTransaction ft = getSupportFragmentManager()
-					.beginTransaction();
-			ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-			ft.replace(R.id.details2, fragBonds);
-			ft.commit();
-		}
-		if(launcher.equals("growth")){
-			Fragment fragGrowth = new F_Growth_Info();
-			FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-			ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-			ft.replace(R.id.details2, fragGrowth);
-			ft.commit();
-		}
+		if(launcher.equals("pv")){setContentView(R.layout.pv_info);}
+		if(launcher.equals("pvann")){setContentView(R.layout.pvann_info);}
+		if(launcher.equals("pvanndue")){setContentView(R.layout.pvanndue_info);}
+		if(launcher.equals("fvann")){setContentView(R.layout.fvann_info);}
+		if(launcher.equals("fvanndue")){setContentView(R.layout.fvanndue_info);}
+		if(launcher.equals("bonds")){setContentView(R.layout.bonds_info);}
+		if(launcher.equals("growth")){setContentView(R.layout.growth_info);}
+		
 	}
 }

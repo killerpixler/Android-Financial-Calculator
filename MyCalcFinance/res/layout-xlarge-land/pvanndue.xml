@@ -1,98 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pvanndue0"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/explain_Formula"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Present Value"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-
-    <EditText
-        android:id="@+id/pvanndue_pv"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cash Flow"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-    <EditText
-        android:id="@+id/pvanndue_cf"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Interest Rate / Discount Rate"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-    <EditText
-        android:id="@+id/pvanndue_r"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Number of years"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
-    <EditText
-        android:id="@+id/pvanndue_t"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-    </EditText>
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/pvanndue0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:id="@+id/pvanndue_calc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-         />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/explain_Formula"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:id="@+id/pvanndue_answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0" 
-        android:padding="10dp"
-    	android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Present Value"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    
+        <EditText
+            android:id="@+id/pvanndue_pv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+        </EditText>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Cash Flow"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pvanndue_cf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Interest Rate / Discount Rate"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pvanndue_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Number of years"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pvanndue_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <Button
+            android:id="@+id/pvanndue_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/pvanndue_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+</ScrollView>
